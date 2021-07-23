@@ -36,7 +36,9 @@ nav {
   margin-left: 10px;
   margin-left: 40px;
   width: 80px;
+  height: 80px;
   cursor: pointer;
+  padding: 7px;
 }
 .logo p {
   margin-left: 10px;
@@ -205,7 +207,7 @@ nav li a:hover {
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0);
 }
 
 .container {
@@ -219,15 +221,29 @@ nav li a:hover {
 }
 
 .card img {
-    width: 100%;
+    width: 250px;
     height: auto;
+	border-radius: 50%;
+	height: 250px;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 950px) {
     .column, .card{
         width: 100%;
         display: block;
     }
+
+	.column {
+		float: left;
+		width: 50%;
+		margin-top: 16px;
+		padding: 0 8px;
+	}
+
+	.card img {
+		width: 200px;
+		height: 200px;
+	}
 }
 
 /*footer skuy*/
@@ -264,12 +280,14 @@ footer .footer .section.footlog {
   	margin-left: 10px;
   	margin-left: 40px;
   	width: 80px;
+	height: 80px;
+	margin: 0px 10px;
 	cursor: pointer;
 }
 .footlog p {
   	margin-left: 5px;
 	margin-right: 10px;
-  	font-size: 20px;
+  	font-size: 22px;
   	font-family: Pacifico, Arial, Helvetica, sans-serif;
   	color: white;
 	cursor: pointer;
